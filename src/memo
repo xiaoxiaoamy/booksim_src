@@ -1,0 +1,2 @@
+valgrind --tool=memcheck ./booksim neural_trail1
+valgrind --tool=memcheck --log-file=val.log ./booksim neural_trail1

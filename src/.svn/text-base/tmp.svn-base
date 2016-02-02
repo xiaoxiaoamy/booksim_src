@@ -1,0 +1,1000 @@
+ 1146  ls
+ 1147  grep register *
+ 1148  grep register * -r
+ 1149  grep register * -r | more
+ 1150  cd gpgpu-sim/
+ 1151  ls
+ 1152  vi shader.h 
+ 1153  svn help
+ 1154  svn info
+ 1155  ls
+ 1156  svn log shader.cc 
+ 1157  cd ..
+ 1158  ks
+ 1159  ls
+ 1160  which svn
+ 1161  cd ../..
+ 1162  ls
+ 1163  cd ..
+ 1164  ls
+ 1165  cd ca_project/
+ 1166  ls
+ 1167  cd Tomasolo/
+ 1168  ll
+ 1169  svn log Assemble
+ 1170  svn log Assemble.txt 
+ 1171  cd .svn/
+ 1172  ls
+ 1173  vi entries 
+ 1174  cde
+ 1175  cd
+ 1176  ls
+ 1177  cd svn/
+ 1178  ls
+ 1179  cd gpgpu-sim/
+ 1180  ls
+ 1181  cd ../..
+ 1182  ls
+ 1183  ipconfig
+ 1184  ifconfig
+ 1185  pwd
+ 1186  cd work
+ 1187  ls
+ 1188  cd gpgpu-sim/
+ 1189  ls
+ 1190  cd v3.x/
+ 1191  ls
+ 1192  cd ../..
+ 1193  ls
+ 1194  cd ca_project/
+ 1195  ls
+ 1196  cd new_project/
+ 1197  ls
+ 1198  cd src/
+ 1199  ls
+ 1200  svn log Makefile
+ 1201  cd .svn/
+ 1202  ls
+ 1203  vi entries 
+ 1204  svn co --help
+ 1205  vi entries 
+ 1206  cd 
+ 1207  cd work/GPGPUsim/
+ 1208  ls
+ 1209  cd ispass2009-benchmarks/
+ 1210  ls
+ 1211  vi tmp 
+ 1212  cd MUM/
+ 1213  vi log/sample.log 
+ 1214  cd ../RAY/
+ 1215  ls
+ 1216  vi README.GPGPU-Sim 
+ 1217  cp ../LIB/gpuwattch_gtx480.xml .
+ 1218  mkdir log
+ 1219  ../bin/release/RAY 256 256
+ 1220  ll
+ 1221  vi output.bmp 
+ 1222  vi README.GPGPU-Sim 
+ 1223  vi makebmp.cpp 
+ 1224  cd ..
+ 1225  ls
+ 1226  cd WP/
+ 1227  ls
+ 1228  cp ../LIB/gpuwattch_gtx480.xml .
+ 1229  mkdir log
+ 1230  vi README
+ 1231  vi README.GPGPU-Sim 
+ 1232  echo "10 ./data/" | ../bin/release/WP
+ 1233  vi timings_20071205 
+ 1234  cd ../CP/
+ 1235  ls
+ 1236  cp ../BFS/gpuwattch_gtx480.xml .
+ 1237  vi README.GPGPU-Sim 
+ 1238  benchmarks/cp/build/cuda_short/cp
+ 1239  cd ..
+ 1240  ls
+ 1241  cd GG
+ 1242  cd DG/
+ 1243  ls
+ 1244  benchmarks/cp/build/cuda_short/cp
+ 1245  cp ../BFS/gpuwattch_gtx480.xml .
+ 1246  vi README.GPGPU-Sim 
+ 1247  ../bin/release/DG ./data/cubeK268.neu
+ 1248  sudo yum install ligbfortran libtorque numactl
+ 1249  sudo apt-get install ligbfortran libtorque numactl
+ 1250  sudo apt-get install provides */mpicc
+ 1251  sudo apt-get install libudev0:i386
+ 1252  ../bin/release/DG ./data/cubeK268.neu
+ 1253  cd /lib/x86_64-linux-gnu/
+ 1254  sudo cp libudev.so.0.13.0 libudev.so.1
+ 1255  cd 
+ 1256  cd work/GPGPUsim/
+ 1257  ls
+ 1258  cd ispass2009-benchmarks/
+ 1259  ls
+ 1260  cd DG/
+ 1261  ../bin/release/DG ./data/cubeK268.neu
+ 1262  exit
+ 1263  ls
+ 1264  exit
+ 1265  ls
+ 1266  exit
+ 1267  ls
+ 1268  exit
+ 1269  cd work/GPGPUsim/
+ 1270  ls
+ 1271  cd v3.x/
+ 1272  source setup_environment 
+ 1273  cd ../..
+ 1274  ls
+ 1275  cd GPGPUsim/
+ 1276  ls
+ 1277  cd ispass2009-benchmarks/
+ 1278  ls
+ 1279  cd NN/
+ 1280  cp ../LIB/gpuwattch_gtx480.xml .
+ 1281  ls
+ 1282  vi README.GPGPU-Sim 
+ 1283  mkdir log
+ 1284  ../bin/release/NN 28 > log/sample.log
+ 1285  cd ..
+ 1286  ls
+ 1287  vi tmp 
+ 1288  cd
+ 1289  ssh ychen-srv2.ee.pitt.edu
+ 1290  cd
+ 1291  ls
+ 1292  cd Downloads/
+ 1293  ls
+ 1294  vi shader.cc 
+ 1295  ls
+ 1296  tar -xvf nvsim0719_src.zip 
+ 1297  unzip nvsim0719_src.zip ../software/
+ 1298  unzip nvsim0719_src.zip ../software/nvsim0719_src
+ 1299  unzip nvsim0719_src.zip 
+ 1300  ll
+ 1301  cd src/
+ 1302  ls
+ 1303  cd ..
+ 1304  ls
+ 1305  cd ..
+ 1306  ls
+ 1307  cd work
+ 1308  cd ../software/m4/
+ 1309  cd ..
+ 1310  ls
+ 1311  mkdir nvsim
+ 1312  cd nvsim/
+ 1313  cp -r ../../Downloads/src .
+ 1314  cp -r ../../Downloads/__MACOSX .
+ 1315  ll
+ 1316  cd src/
+ 1317  ls
+ 1318  cd ..
+ 1319  ls
+ 1320  cd __MACOSX/
+ 1321  ls
+ 1322  cd src/
+ 1323  ls
+ 1324  ll
+ 1325  cd ..
+ 1326  ls
+ 1327  cd ..
+ 1328  ls
+ 1329  cd src/
+ 1330  ls
+ 1331  make
+ 1332  ll *.cfg
+ 1333  vi nvsim.cfg 
+ 1334  vimdiff nvsim.cfg zhenyu_STT.cfg 
+ 1335  vi zhenyu_STT.cell 
+ 1336  vi zhenyu_STT.cfg 
+ 1337  cd ..
+ 1338  ls
+ 1339  cd
+ 1340  ls
+ 1341  cd D
+ 1342  cd Downloads/
+ 1343  ls
+ 1344  gzip -d MLC_NVSim.tgz 
+ 1345  ll
+ 1346  tar -xvf MLC_NVSim.tar 
+ 1347  cd nvsim/
+ 1348  ll
+ 1349  vimdiff MLC_conv.cfg MLC_hard.cfg 
+ 1350  vimdiff MLC_36F_conv.cell MLC_36F_hard.cell 
+ 1351  vimdiff MLC_36F_soft.cell MLC_36F_hard.cell 
+ 1352  cd ..
+ 1353  ls
+ 1354  vim shader.cc ../work/GPGPUsim/v3.x/src/gpgpu-sim/shader.cc 
+ 1355  vimdiff shader.cc ../work/GPGPUsim/v3.x/src/gpgpu-sim/shader.cc 
+ 1356  vimdiff shader.h ../work/GPGPUsim/v3.x/src/gpgpu-sim/shader.h
+ 1357  vi shader.cc 
+ 1358  vimdiff shader.cc ../work/GPGPUsim/v3.x/src/gpgpu-sim/shader.cc 
+ 1359  vi shader.cc 
+ 1360  grep ldst_unit * | more
+ 1361  grep ldst_unit *
+ 1362  vi shader.cc 
+ 1363  vi shader.h 
+ 1364  vi shader.cc 
+ 1365  grep m_warp_size * -r | more
+ 1366  grep m_warp_size * 
+ 1367  cd 
+ 1368  cd work
+ 1369  ls
+ 1370  cd GPGPUsim/
+ 1371  ls
+ 1372  cd v3.x/
+ 1373  ls
+ 1374  cd ../ispass2009-benchmarks/
+ 1375  ls
+ 1376  cd BFS/
+ 1377  grep -gpgpu_scheduler *
+ 1378  grep gpgpu_scheduler *
+ 1379  vi gpgpusim.config 
+ 1380  cd 
+ 1381  cd wi
+ 1382  cd work
+ 1383  ls
+ 1384  cd GPGPUsim/
+ 1385  ls
+ 1386  cd v3.x/
+ 1387  ls
+ 1388  cd src/
+ 1389  ls
+ 1390  cd ../../..
+ 1391  ls
+ 1392  cd ..
+ 1393  ls
+ 1394  vi tmp 
+ 1395  cd ..
+ 1396  cd wo
+ 1397  cd xiaoxiaoliu/
+ 1398  ls
+ 1399  cd work
+ 1400  ls
+ 1401  cd GPGPUsim/
+ 1402  ls
+ 1403  cd v3.x/
+ 1404  ls
+ 1405  cd src/
+ 1406  ls
+ 1407  cd gpgpu-sim/.
+ 1408  ls
+ 1409  vi shader.cc 
+ 1410  grep reserveRegisters *
+ 1411  vi scoreboard.cc 
+ 1412  grep Scoreboard * | more
+ 1413  cd ..
+ 1414  ls
+ 1415  grep max_warps_per_shader * -r
+ 1416  cd ..
+ 1417  grep max_warps_per_shader * -r | more
+ 1418  cd ..
+ 1419  ls
+ 1420  grep max_warps_per_shader * -r | more
+ 1421  grep n_thread_per_shader *
+ 1422  grep n_thread_per_shader * -r
+ 1423  grep threads_per_core * -r
+ 1424  ls
+ 1425  cd v3.x/
+ 1426  ls
+ 1427  cd src/
+ 1428  ls
+ 1429  cd gpgpu-sim/
+ 1430  ls
+ 1431  vi shader.cc 
+ 1432  cd ..
+ 1433  ls
+ 1434  make
+ 1435  cd ..
+ 1436  ls
+ 1437  make
+ 1438  vi src/gpgpu-sim/gpu-sim.cc 
+ 1439  svn diff src/gpgpu-sim/gpu-sim.cc 
+ 1440  vi src/gpgpu-sim/gpu-sim.cc 
+ 1441  make
+ 1442  vi src/gpgpu-sim/shader.cc 
+ 1443  grep allocate_bank_for_write *
+ 1444  grep allocate_bank_for_write * -r
+ 1445  vi src/gpgpu-sim/shader.h 
+ 1446  grep m_allocated_bank * -r | more
+ 1447  vi src/gpgpu-sim/shader.h 
+ 1448  exit
+ 1449  cd work
+ 1450  ls
+ 1451  cd GPGPUsim/
+ 1452  ls
+ 1453  cd v3.x/
+ 1454  ls
+ 1455  source setup_environment 
+ 1456  cd ../
+ 1457  ks
+ 1458  cd ..
+ 1459  ls
+ 1460  cd GPGPUsim/
+ 1461  ls
+ 1462  cd ispass2009-benchmarks/
+ 1463  ls
+ 1464  cd DG/
+ 1465  vi README.GPGPU-Sim 
+ 1466  ./bin/release/DG ./data/cubeK268.neu
+ 1467  ../bin/release/DG ./data/cubeK268.neu
+ 1468  sudo ln -sf /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
+ 1469  ../bin/release/DG ./data/cubeK268.neu
+ 1470  ll /lib/x86_64-linux-gnu/
+ 1471  ../bin/release/DG ./data/cubeK268.neu
+ 1472  sudo apt-get install libmpi_cxx
+ 1473  ../bin/release/DG ./data/cubeK268.neu
+ 1474  ls /lib/x86_64-linux-gnu/libmpi
+ 1475  ls /lib/x86_64-linux-gnu/libmpi*
+ 1476  sudo ln -sf /lib/x86_64-linux-gnu/libmpi_cxx.so.0 /lib/x86_64-linux-gnu/libmpi.so.1
+ 1477  ../bin/release/DG ./data/cubeK268.neu
+ 1478  cd ../..
+ 1479  ls
+ 1480  cd ..
+ 1481  ls
+ 1482  cd ..
+ 1483  ls
+ 1484  cd cuda-4.0/
+ 1485  ls
+ 1486  cd CUDAToolsSDK/
+ 1487  ls
+ 1488  cd NVML/
+ 1489  ls
+ 1490  cd ..
+ 1491  ls
+ 1492  cd CUPTI/
+ 1493  ls
+ 1494  cd ..
+ 1495  ls
+ 1496  cd Debugger/
+ 1497  ls
+ 1498  cd ../..
+ 1499  ks
+ 1500  ls
+ 1501  cd cuda/
+ 1502  ll
+ 1503  cd src/
+ 1504  ls
+ 1505  cd ..
+ 1506  ls
+ 1507  cd ..
+ 1508  ls
+ 1509  cd CUDAToolsSDK/
+ 1510  ls
+ 1511  cd NVML/
+ 1512  ls
+ 1513  cd doxygen/
+ 1514  ls
+ 1515  cd ..
+ 1516  ls
+ 1517  cd ..
+ 1518  ls
+ 1519  cd CUPTI/
+ 1520  ls
+ 1521  cd sample/
+ 1522  ls
+ 1523  cd 
+ 1524  cd work
+ 1525  ks
+ 1526  ls
+ 1527  cd GPGPUsim/
+ 1528  ls
+ 1529  cd v3.x/
+ 1530  ls
+ 1531  cd src/
+ 1532  ls
+ 1533  cd gpgpu-sim/.svn/
+ 1534  cd ..
+ 1535  ls
+ 1536  ll
+ 1537  vi shader.h 
+ 1538  cd 
+ 1539  cd work
+ 1540  ls
+ 1541  cd GPGPUsim/
+ 1542  ;s
+ 1543  ls
+ 1544  cd ispass2009-benchmarks/
+ 1545  ls
+ 1546  cd ../v3.x/
+ 1547  source setup_environment 
+ 1548  cd ../
+ 1549  ls
+ 1550  cd ispass2009-benchmarks/
+ 1551  ls
+ 1552  cd BFS/
+ 1553  ls
+ 1554  vi README.GPGPU-Sim 
+ 1555  ../bin/release/BFS ./data/graph65536.txt > log/sample_bank_info,log
+ 1556  vi log/sample_bank_info,log 
+ 1557  ../bin/release/BFS ./data/graph65536.txt > log/sample_bank_info.log
+ 1558  vi log/sample_bank_info.log 
+ 1559  ../bin/release/BFS ./data/graph65536.txt > log/sample_bank_info.log
+ 1560  vi log/sample_ban
+ 1561  ../bin/release/BFS ./data/graph65536.txt 
+ 1562  cd data/
+ 1563  vi graph65536.txt 
+ 1564  cd ..
+ 1565  ls
+ 1566  cd..
+ 1567  ls
+ 1568  cd ..
+ 1569  ls
+ 1570  vi tmp 
+ 1571  cd ../
+ 1572  ls
+ 1573  cd ..
+ 1574  ls
+ 1575  cd ..
+ 1576  ls
+ 1577  vi tmp 
+ 1578  cd work
+ 1579  ls
+ 1580  cd GPGPUsim/
+ 1581  ls
+ 1582  cd ispass2009-benchmarks/
+ 1583  ls
+ 1584  cd BFS/
+ 1585  ls
+ 1586  ../bin/release/BFS ./data/graph4096.txt 
+ 1587  cd ../..
+ 1588  ks
+ 1589  ls
+ 1590  cd v3.x/
+ 1591  ls
+ 1592  cd src/
+ 1593  ls
+ 1594  cd gpgpu-sim/
+ 1595  ls
+ 1596  vi shader.cc 
+ 1597  cd ,,
+ 1598  cd ..
+ 1599  vi abstract_hardware_model.cc 
+ 1600  ifconfig
+ 1601  cd ..
+ 1602  ls
+ 1603  cd ..
+ 1604  ls
+ 1605  cd ..
+ 1606  ls
+ 1607  cd ..
+ 1608  ls
+ 1609  cd NVIDIA_GPU_Computing_SDK/
+ 1610  ls
+ 1611  cd C
+ 1612  ls
+ 1613  cd bin/
+ 1614  ls
+ 1615  cd ..
+ 1616  ls
+ 1617  ll
+ 1618  vi Makefile 
+ 1619  make
+ 1620  cd C
+ 1621  ls
+ 1622  cd bin/
+ 1623  ls
+ 1624  cd linux/
+ 1625  ls
+ 1626  cd release/
+ 1627  ll
+ 1628  ls
+ 1629  cd ,,
+ 1630  cd ..
+ 1631  ls
+ 1632  cd release/
+ 1633  ls
+ 1634  cd ..
+ 1635  ls
+ 1636  cd ../..
+ 1637  ls
+ 1638  cd doc/
+ 1639  ls
+ 1640  vi Release_Notes.txt 
+ 1641  cd ..
+ 1642  ls
+ 1643  cd common/
+ 1644  ls
+ 1645  vi cutil_Readme.txt 
+ 1646  cd ..
+ 1647  ls
+ 1648  cd ..
+ 1649  ls
+ 1650  vi License.txt 
+ 1651  cd ..
+ 1652  ls
+ 1653  cd work
+ 1654  ls
+ 1655  cd GPGPUsim/
+ 1656  l
+ 1657  cd v3.x/
+ 1658  ls
+ 1659  cd ..
+ 1660  ls
+ 1661  cd ispass2009-benchmarks/
+ 1662  ls
+ 1663  cd BFS/
+ 1664  ls
+ 1665  vi result.txt 
+ 1666  vi config_fermi_islip.icnt 
+ 1667  vi gpgpusim.config 
+ 1668  vi README.GPGPU-Sim 
+ 1669  ../bin/release/BFS ./data/graph65536.txt > log/sram_rf_16384.log
+ 1670  vi log/sram_rf_16384.log 
+ 1671  vi log/sample_bank_info.log 
+ 1672  vi log/sample_bank_info,log 
+ 1673  grep "gpu.*ipc" log/sample_bank_info,log > aaa_32768
+ 1674  vi aaa_32768 
+ 1675  grep "gpu.*ipc" log/sram_rf_16384.log > aaa_16384
+ 1676  vi aaa_16384 
+ 1677  vi aaa_32768 
+ 1678  vi aaa_16384 
+ 1679  ls
+ 1680  vi gpgpusim.config 
+ 1681  vi ReadMe.txt 
+ 1682  vi README.GPGPU-Sim 
+ 1683  ../bin/release/BFS ./data/graph65536.txt > log/sram_rf_65536.log 
+ 1684  grep "gpu.*ipc" log/sram_rf_65536.log > aaa_65536
+ 1685  vi aaa_65536 
+ 1686  cd ..
+ 1687  ls
+ 1688  cd ..
+ 1689  ls
+ 1690  cd v3.x/
+ 1691  ls
+ 1692  cd src/
+ 1693  ls
+ 1694  vi abstract_hardware_model.cc 
+ 1695  cd ..
+ 1696  grep threads_per_cta *
+ 1697  grep threads_per_cta * -r
+ 1698  grep threads_per_cta * -r | more
+ 1699  vi src/abstract_hardware_model.cc 
+ 1700  vi src/abstract_hardware_model.h
+ 1701  cd ..
+ 1702  ls
+ 1703  cd ispass2009-benchmarks/
+ 1704  ls
+ 1705  cd BFS/
+ 1706  ls
+ 1707  vi README.GPGPU-Sim 
+ 1708  ../bin/release/BFS ./data/graph65536.txt > log/sample_bank_info.log 
+ 1709  vi log/sample_bank_info.log 
+ 1710  cd ..
+ 1711  ls
+ 1712  cd LIB/
+ 1713  vi README.GPGPU-Sim 
+ 1714  ../bin/release/LIB
+ 1715  ../bin/release/LIB > aaa
+ 1716  vi aaa 
+ 1717  cd ../..
+ 1718  sl
+ 1719  ls
+ 1720  cd v3.x/
+ 1721  ls
+ 1722  cd src/
+ 1723  vi gpgpu-sim/shader.cc 
+ 1724  grep entry * | more
+ 1725  ls
+ 1726  cd tool/
+ 1727  ls
+ 1728  hg clone https://bitbucket.org/nvsim/nvsim
+ 1729  cd
+ 1730  cd work
+ 1731  ls
+ 1732  cd ../software/
+ 1733  ls
+ 1734  cd nvsim/
+ 1735  ls
+ 1736  cd src/
+ 1737  ls
+ 1738  vi Makefile
+ 1739  cd ,,
+ 1740  cd ..
+ 1741  ls
+ 1742  cd ..
+ 1743  ls
+ 1744  cd ..
+ 1745  ls
+ 1746  cd work
+ 1747  ls
+ 1748  cd GPGPUsim/
+ 1749  ls
+ 1750  cd v3.x/
+ 1751  ls
+ 1752  cd
+ 1753  ls
+ 1754  cd software/
+ 1755  ls
+ 1756  cd nvsim/
+ 1757  ls
+ 1758  cd src/
+ 1759  ls
+ 1760  cd 
+ 1761  cd Downloads/
+ 1762  ls
+ 1763  cd ML
+ 1764  cd nvsim/
+ 1765  ls
+ 1766  ./nvsim SLC.cfg 
+ 1767  cd
+ 1768  cd work
+ 1769  ls
+ 1770  cd GPGPUsim/
+ 1771  ls
+ 1772  cd v3.x/
+ 1773  ls
+ 1774  cd src/gpgpu-sim/
+ 1775  ls
+ 1776  grep warp_inst_t *
+ 1777  vi shader.h 
+ 1778  grep warp_inst_t * | more
+ 1779  cd ../..
+ 1780  ls
+ 1781  cd ..
+ 1782  ls
+ 1783  cd ispass2009-benchmarks/
+ 1784  ls
+ 1785  cd BFS/
+ 1786  ls
+ 1787  vi log/sram_rf_65536.log 
+ 1788  cd ../..
+ 1789  ls
+ 1790  cd v3.x/
+ 1791  grep gpgpu_RT_enable * -r
+ 1792  cd ..
+ 1793  cd ispass2009-benchmarks/
+ 1794  grep gpgpu_RT_enable * -r
+ 1795  grep gpgpu_RT_aware_scheduling *
+ 1796  grep gpgpu_RT_aware_scheduling * -r
+ 1797  cd ..
+ 1798  ls
+ 1799  cd v3.x/
+ 1800  grep gpgpu_RT_aware_scheduling * -r
+ 1801  grep m_next_cycle_prioritized_warps *
+ 1802  grep m_next_cycle_prioritized_warps * -r
+ 1803  grep m_next_cycle_prioritized_warps * -r | more
+ 1804  vi src/gpgpu-sim/shader.cc 
+ 1805  vi src/gpgpu-sim/shader.h
+ 1806  vi src/gpgpu-sim/shader.cc 
+ 1807  cd
+ 1808  ssh @ychen-srv2.ee.pitt.edu
+ 1809  ssh xiaoxiaoliu@ychen-srv2.ee.pitt.edu
+ 1810  pwd
+ 1811  ls
+ 1812  cd Downloads/
+ 1813  los
+ 1814  vi shader.cc 
+ 1815  cd
+ 1816  cd work/F
+ 1817  cd work/GPGPUsim/
+ 1818  ls
+ 1819  cd v3.x/
+ 1820  ls
+ 1821  cd src/
+ 1822  ls
+ 1823  cd gpgpu-sim/.svn/
+ 1824  cd ..
+ 1825  ls
+ 1826  grep move_warp *
+ 1827  cd ..
+ 1828  ls
+ 1829  grep move_warp * -r
+ 1830  vi abstract_hardware_model.cc 
+ 1831  grep get_is_write * -r
+ 1832  vi gpgpu-sim/mem_fetch.h 
+ 1833  grep m_dispatch_reg * -r
+ 1834  grep m_dispatch_reg * -r | more
+ 1835  grep warp_inst_t * -r
+ 1836  grep warp_inst_t * -r | more
+ 1837  vi abstract_hardware_model.h 
+ 1838  cd 
+ 1839  ls
+ 1840  cd Downloads/
+ 1841  ls
+ 1842  vi shader.cc 
+ 1843  vimdiff shader.cc ../work/GPGPUsim/v3.x/src/gpgpu-sim/shader.cc 
+ 1844  cd 
+ 1845  ls
+ 1846  cd work
+ 1847  ls
+ 1848  cd GPGPUsim/
+ 1849  ls
+ 1850  cd v3.x/
+ 1851  ls
+ 1852  cd ..
+ 1853  cd ispass2009-benchmarks/
+ 1854  ls
+ 1855  cd BFS/
+ 1856  ls
+ 1857  vi result.txt 
+ 1858  vi log/sram_rf_65536.log 
+ 1859  cd log/
+ 1860  ls
+ 1861  vimdiff sram_rf_16384.log sram_rf_65536.log 
+ 1862  cd ..
+ 1863  vi ReadMe.txt 
+ 1864  vi README.GPGPU-Sim 
+ 1865  ../bin/release/BFS ./data/graph65536.txt
+ 1866  ../bin/release/BFS ./data/graph65536.txt > log/tmp.log
+ 1867  vi log/tmp.log 
+ 1868  cd 
+ 1869  cd Downloads/
+ 1870  ks
+ 1871  ls
+ 1872  vimdiff shader.h ../work/GPGPUsim/v3.x/src/gpgpu-sim/shader.h 
+ 1873  vi shader.cc 
+ 1874  exit
+ 1875  ls
+ 1876  top
+ 1877  kill 9022
+ 1878  top
+ 1879  ls
+ 1880  cd work
+ 1881  cd wo
+ 1882  ls
+ 1883  cd GPGPUsim/
+ 1884  ls
+ 1885  cd v3.x/
+ 1886  ls
+ 1887  cd src/
+ 1888  ls
+ 1889  cd gpgpu-sim/.svn/
+ 1890  cd ..
+ 1891  ls
+ 1892  vi shader.h 
+ 1893  exit
+ 1894  top
+ 1895  exit
+ 1896  top
+ 1897  kill 23229
+ 1898  top
+ 1899  pwd
+ 1900  ls
+ 1901  cd C/bin/linux/
+ 1902  ls
+ 1903  cd release/
+ 1904  ls
+ 1905  vi transpose_sram.log 
+ 1906  ls
+ 1907  cd Downloads/
+ 1908  ll
+ 1909  cd nvsim/
+ 1910  ls
+ 1911  ll result/
+ 1912  vi result/SLC.txt 
+ 1913  vi result/MLC_conv.txt 
+ 1914  ls
+ 1915  ./nvsim 
+ 1916  vi SLC.cfg 
+ 1917  cd ..
+ 1918  ls
+ 1919  cd ..
+ 1920  ls
+ 1921  cd software/
+ 1922  ls
+ 1923  cd nvsim/
+ 1924  ls
+ 1925  cd src/
+ 1926  ls
+ 1927  ./nvsim zhenyu_SRAM.cfg sram_result.log
+ 1928  ./nvsim zhenyu_SRAM.cfg > sram_result.log
+ 1929  vi sram_result.log 
+ 1930  vi xiaoxiao_SRAM_rf.cfg 
+ 1931  ./nvsim xiaoxiao_SRAM_rf.cfg > xiaoxiao_sram_result.log
+ 1932  vi xiaoxiao_sram_result.log 
+ 1933  cp zhenyu_SRAM.cell xiaoxiao_SRAM.cell
+ 1934  ./nvsim xiaoxiao_SRAM_rf.cfg > xiaoxiao_sram_result.log
+ 1935  vi xiaoxiao_sram_result.log 
+ 1936  cp zhenyu_SRAM.cell xiaoxiao_SRAM_rf.cell
+ 1937  ./nvsim xiaoxiao_SRAM_rf.cfg > xiaoxiao_sram_result.log
+ 1938  vi xiaoxiao_sram_result.log 
+ 1939  diff xiaoxiao_SRAM_rf.cfg zhenyu_SRAM.cfg 
+ 1940  vimdiff xiaoxiao_SRAM_rf.cfg zhenyu_SRAM.cfg 
+ 1941  cp zhenyu_STT.cfg xiaoxiao_STT.cfg
+ 1942  vi xiaoxiao_STT.cfg 
+ 1943  cp zhenyu_STT.cell xiaoxiao_STT.cell
+ 1944  ./nvsim xiaoxiao_STT.cfg 
+ 1945  exit
+ 1946  ls
+ 1947  cd NVIDIA_GPU_Computing_SDK/C/src/
+ 1948  ls
+ 1949  cd binomialOptions/
+ 1950  ls
+ 1951  make
+ 1952  scp -r mao@136.142.38.155:/home/mao/NVIDIA_GPU_Computing_SDK/C/src/RNN_GPU ./
+ 1953  ls
+ 1954  cd ../
+ 1955  mv binomialOptions/RNN_GPU/ ./
+ 1956  cd RNN_GPU/
+ 1957  ls
+ 1958  make
+ 1959  vim Makefile 
+ 1960  make
+ 1961  vim Makefile 
+ 1962  ls
+ 1963  vim Makefile 
+ 1964  make
+ 1965  cd ..
+ 1966  ls
+ 1967  make
+ 1968  ls
+ 1969  cd C/src/RNN_GPU/
+ 1970  ls
+ 1971  vim Makefile 
+ 1972  cd ..
+ 1973  ls
+ 1974  cd ..
+ 1975  ls
+ 1976  vim Makefile 
+ 1977  ls
+ 1978  cd src/
+ 1979  ls
+ 1980  cd ..
+ 1981  ls
+ 1982  cd common/
+ 1983  ls
+ 1984  vim common.mk
+ 1985  vim Makefile
+ 1986  ls
+ 1987  cd ..
+ 1988  ls
+ 1989  cd src/
+ 1990  ls
+ 1991  cd RNN_GPU/
+ 1992  ls
+ 1993  make
+ 1994  vim Makefile 
+ 1995  nvcc -I. RNN_Pipeline_lbx.cu -o RNN_GPU
+ 1996  vim RNN_Pipeline_lbx.cu 
+ 1997  nvcc -I. RNN_Pipeline_lbx.cu -o RNN_GPU
+ 1998  vim RNN_Pipeline_lbx.cu 
+ 1999  vim Makefile 
+ 2000  exit
+ 2001  cd work
+ 2002  ls
+ 2003  cd noc/
+ 2004  ls
+ 2005  cd cmesh/
+ 2006  ls
+ 2007  cd trunk/
+ 2008  ls
+ 2009  cd src/
+ 2010  ls
+ 2011  make
+ 2012  vi aaa
+ 2013  vi traffic.cpp 
+ 2014  vi trafficmanager.cpp 
+ 2015  ll trafficmanager.*
+ 2016  vi trafficmanager.cpp 
+ 2017  rm .trafficmanager.cpp.swp
+ 2018  vi trafficmanager.cpp 
+ 2019  grep DivisionAlgorithm *
+ 2020  vi trafficmanager.cpp 
+ 2021  cd ..
+ 2022  ls
+ 2023  cd ..
+ 2024  ls
+ 2025  cd ..
+ 2026  ls
+ 2027  cd noc_neu/
+ 2028  ls
+ 2029  cd trunk/
+ 2030  ls
+ 2031  cd src/
+ 2032  ls
+ 2033  make
+ 2034  vi trafficmanager.cpp 
+ 2035  grep _GeneratePacket *
+ 2036  grep _GeneratePacket * -r
+ 2037  vi trafficmanager.cpp 
+ 2038  grep stype *
+ 2039  vi trafficmanager.cpp 
+ 2040  grep WRITE_REQUEST * 
+ 2041  vi buffer_state.cpp 
+ 2042  vi routefunc.cpp 
+ 2043  make
+ 2044  vi routefunc.hpp 
+ 2045  make
+ 2046  vi routefunc.hpp 
+ 2047  grep WRITE_REQUEST *
+ 2048  vi flit.hpp 
+ 2049  make
+ 2050  grep _write_reqeust_size *
+ 2051  grep _write_*_size *
+ 2052  vi trafficmanager.cpp 
+ 2053  make
+ 2054  vi trafficmanager.hpp 
+ 2055  make
+ 2056  vi booksim_config.cpp 
+ 2057  grep .booksim_config.cpp.swp *
+ 2058  vi booksim_config.cpp 
+ 2059  rm .booksim_config.cpp.swp 
+ 2060  vi booksim_config.cpp 
+ 2061  grep use_read_write *
+ 2062  vi trafficmanager.cpp 
+ 2063  grep dest *
+ 2064  vi traffic.cpp 
+ 2065  grep realgn *
+ 2066  vi main.cpp 
+ 2067  grep realgn *
+ 2068  vi traffic.cpp 
+ 2069  grep uniform *
+ 2070  vi traffic.cpp 
+ 2071  grep gTrafficFunctionMap *
+ 2072  vi trafficmanager.cpp 
+ 2073  vi traffic.cpp 
+ 2074  make
+ 2075  vi traffic.cpp 
+ 2076  make
+ 2077  cd examples/
+ 2078  vi cmesh_rate001 
+ 2079  vi ../traffic.cpp 
+ 2080  vi cmesh_rate001 
+ 2081  cd ..
+ 2082  ./booksim examples/cmesh_rate001 > tmp
+ 2083  vi tmp 
+ 2084  ./booksim examples/torus88 
+ 2085  grep printf *
+ 2086  ./booksim examples/cmeshconfig 
+ 2087  ls
+ 2088  vi run.bash_bitcomp 
+ 2089  rm tmp 
+ 2090  gdb ./booksim examples/cmeshconfig 
+ 2091  ./booksim examples/mesh88_lat 
+ 2092  gdb ./booksim examples/mesh88_lat 
+ 2093  gdb ./booksim
+ 2094  gdb ./booksim 
+ 2095  ./booksim examples/mesh88_lat 
+ 2096  grep NEUR *
+ 2097  grep config * | more
+ 2098  vi booksim_config.cpp 
+ 2099  grep neu *
+ 2100  grep neu -i *
+ 2101  vi routefunc.cpp 
+ 2102  make
+ 2103  ./booksim examples/mesh88_lat 
+ 2104  cd ..
+ 2105  ls
+ 2106  cd ../..
+ 2107  ls
+ 2108  mkdir nn
+ 2109  cd nn/
+ 2110  svn co https://nocs.stanford.edu/cgi-bin/svn.cgi/booksim2.0
+ 2111  ll
+ 2112  cd booksim2.0/
+ 2113  ls
+ 2114  cd trunk/
+ 2115  ls
+ 2116  cd src/
+ 2117  make
+ 2118  vi traffic.cpp 
+ 2119  vi trafficmanager.cpp 
+ 2120  cp examples/mesh88_lat mesh_nn
+ 2121  vi mesh_nn 
+ 2122  grep anytype *
+ 2123  grep ANY
+ 2124  grep ANY *
+ 2125  vi mesh_nn 
+ 2126  cd examples/
+ 2127  grep WRITE *
+ 2128  cd ..
+ 2129  vi booksim_config.cpp 
+ 2130  vi mesh_nn 
+ 2131  grep uniform *
+ 2132  vi traffic.cpp 
+ 2133  grep neig *
+ 2134  vi mesh_nn 
+ 2135  ./booksim mesh_nn 
+ 2136  grep inject *
+ 2137  ./booksim mesh_nn > log
+ 2138  vi log 
+ 2139  ipconfig
+ 2140  ip
+ 2141  ifconfig
+ 2142  pwd
+ 2143  ll
+ 2144  ls
+ 2145  history > tmp
