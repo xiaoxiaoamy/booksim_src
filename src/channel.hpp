@@ -114,7 +114,7 @@ void Channel<T>::WriteOutputs() {
   pair<int, T *> const & item = _wait_queue.front();
   int const & time = item.first;
   //printf ("Assertion failed: Simtime=%d, time=%d\n", GetSimTime(), time);
-  cout<<"Assertion failed: Simtime="<<GetSimTime()<<", time="<<time<<endl;
+//  cout<<"Assertion failed: Simtime="<<GetSimTime()<<", time="<<GetSimTime()<<endl;
   if(GetSimTime() < time) {
     return;
   }

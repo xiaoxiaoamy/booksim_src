@@ -165,6 +165,9 @@ void BusMesh::_BuildNet( const Configuration &config )
 
       }
     }
+ 
+    _routers[node]->AddInputChannel( _buschan[node], _buschan_cred[node] );
+    _routers[node]->AddOutputChannel( _buschan[node], _buschan_cred[node] );
     
   }
 
@@ -183,7 +186,7 @@ void BusMesh::_BuildNet( const Configuration &config )
 
     //2 ports in both input and output
     _busrouters[node] = Router::NewBusRouter( config, this, router_name.str( ), 
-        				node, 3, 3 , node%_node_per_bus);
+        				node, 2, 2 , node%_node_per_bus);
     _timed_modules.push_back(_busrouters[node]);
 
     router_name.str("");
@@ -206,29 +209,45 @@ void BusMesh::_BuildNet( const Configuration &config )
     left_input  = _BusRightChannel( left_node );
 
     //add the input channel
-    _busrouters[node]->AddInputChannel( _chan[right_input], _chan_cred[right_input] );
-    _busrouters[node]->AddInputChannel( _chan[left_input], _chan_cred[left_input] );
+    if (node%_node_per_bus == 0) {
+      _busrouters[node]->AddInputChannel( _buschan[node/_node_per_bus], _buschan_cred[node/_node_per_bus] );
+      _buschan[node/_node_per_bus]->SetLatency( 1 );
+      _buschan_cred[node/_node_per_bus]->SetLatency( 1 );
+    } else {
+      _busrouters[node]->AddInputChannel( _chan[right_input], _chan_cred[right_input] );
+      _chan_cred[right_input]->SetLatency( 1 );
+      _chan[right_input]->SetLatency( 1 );
+    }
+   // _busrouters[node]->AddInputChannel( _chan[left_input], _chan_cred[left_input] );
 //    cout<<"Debug input channel: Add input channel for bus node "<<node<<endl;
 
     //set input channel latency
-    _chan[left_input]->SetLatency( 1 );
-    _chan_cred[right_input]->SetLatency( 1 );
-    _chan_cred[left_input]->SetLatency( 1 );
-    _chan[right_input]->SetLatency( 1 );
+    //_chan[left_input]->SetLatency( 1 );
+    //_chan_cred[right_input]->SetLatency( 1 );
+    //_chan_cred[left_input]->SetLatency( 1 );
+    //_chan[right_input]->SetLatency( 1 );
 
     //get the output channel number
     right_output = _BusRightChannel( node );
     left_output  = _BusLeftChannel( node );
     
     //add the output channel
-    _busrouters[node]->AddOutputChannel( _chan[right_output], _chan_cred[right_output] );
-    _busrouters[node]->AddOutputChannel( _chan[left_output], _chan_cred[left_output] );
+    //_busrouters[node]->AddOutputChannel( _chan[right_output], _chan_cred[right_output] );
+    if ((node%_node_per_bus)-(_node_per_bus-1) == 0) {
+      _busrouters[node]->AddOutputChannel( _buschan[node/_node_per_bus], _buschan_cred[node/_node_per_bus] );
+      _buschan[node/_node_per_bus]->SetLatency( 1 );
+      _buschan_cred[node/_node_per_bus]->SetLatency( 1 );
+    } else {
+      _busrouters[node]->AddOutputChannel( _chan[left_output], _chan_cred[left_output] );
+      _chan[left_output]->SetLatency( 1 );
+      _chan_cred[left_output]->SetLatency( 1 );
+    }
 
     //set output channel latency
-    _chan[right_output]->SetLatency( 1 );
-    _chan[left_output]->SetLatency( 1 );
-    _chan_cred[right_output]->SetLatency( 1 );
-    _chan_cred[left_output]->SetLatency( 1 );
+    //_chan[right_output]->SetLatency( 1 );
+    //_chan[left_output]->SetLatency( 1 );
+    //_chan_cred[right_output]->SetLatency( 1 );
+    //_chan_cred[left_output]->SetLatency( 1 );
 
     
     //injection and ejection channel, always 1 latency

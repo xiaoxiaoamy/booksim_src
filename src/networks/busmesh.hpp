@@ -35,7 +35,7 @@ class BusMesh : public Network {
   int _k;
   int _n;
   int _node_per_bus;
-  int _router_in_mesh;
+//  int _router_in_mesh;
   int _router_in_bus;
 
   void _ComputeSize( const Configuration &config );

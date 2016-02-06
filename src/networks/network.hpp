@@ -53,6 +53,7 @@ protected:
   int _channels;
   int _classes;
   int _bus;
+  int _router_in_mesh;
 
   vector<Router *> _routers;
   vector<Router *> _busrouters;
@@ -65,6 +66,9 @@ protected:
 
   vector<FlitChannel *> _chan;
   vector<CreditChannel *> _chan_cred;
+
+  vector<FlitChannel *> _buschan;
+  vector<CreditChannel *> _buschan_cred;
 
   deque<TimedModule *> _timed_modules;
 

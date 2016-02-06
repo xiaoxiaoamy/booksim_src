@@ -1,0 +1,166 @@
+6 | node1 | Enqueuing packet 0 at time 6 src = 1 dest = 36.
+6 | node1 | Enqueuing flit 0 (packet 0) at time 6.
+6 | node1 | Enqueuing flit 1 (packet 0) at time 6.
+6 | node1 | Enqueuing flit 2 (packet 0) at time 6.
+6 | node1 | Enqueuing flit 3 (packet 0) at time 6.
+6 | node1 | Enqueuing flit 4 (packet 0) at time 6.
+6 | node1 | Enqueuing flit 5 (packet 0) at time 6.
+6 | node1 | Enqueuing flit 6 (packet 0) at time 6.
+6 | node1 | Enqueuing flit 7 (packet 0) at time 6.
+6 | traffic_manager | Finding output VC for flit 0:
+6 | traffic_manager |   Selected output VC 0.
+6 | network_0/router_0_0_1 | Adding VC range [0,7] at output port 1 for flit 0 (input port 1, destination 36).
+6 | node1 | Generating lookahead routing info for flit 0.
+6 | node1 | Injecting flit 0 into subnet 0 at time 6 with priority 0.
+7 | network_0/network_0_fchan_ingress1 | Beginning channel traversal for flit 0 with delay 1.
+7 | node8 | Enqueuing packet 1 at time 7 src = 8 dest = 36.
+7 | node8 | Enqueuing flit 8 (packet 1) at time 7.
+7 | node8 | Enqueuing flit 9 (packet 1) at time 7.
+7 | node8 | Enqueuing flit 10 (packet 1) at time 7.
+7 | node8 | Enqueuing flit 11 (packet 1) at time 7.
+7 | node8 | Enqueuing flit 12 (packet 1) at time 7.
+7 | node8 | Enqueuing flit 13 (packet 1) at time 7.
+7 | node8 | Enqueuing flit 14 (packet 1) at time 7.
+7 | node8 | Enqueuing flit 15 (packet 1) at time 7.
+7 | node1 | Injecting flit 1 into subnet 0 at time 7 with priority 0.
+7 | traffic_manager | Finding output VC for flit 8:
+7 | traffic_manager |   Selected output VC 0.
+7 | network_0/router_0_2_0 | Adding VC range [0,7] at output port 3 for flit 8 (input port 1, destination 36).
+7 | node8 | Generating lookahead routing info for flit 8.
+7 | node8 | Injecting flit 8 into subnet 0 at time 7 with priority 0.
+7 | network_0/network_0_fchan_ingress1 | Completed channel traversal for flit 0.
+8 | network_0/network_0_fchan_ingress1 | Beginning channel traversal for flit 1 with delay 1.
+8 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 8 with delay 1.
+8 | network_0/router_0_0_1 | Buss router Received flit 0 from channel at input 1.
+8 | node1 | Injecting flit 2 into subnet 0 at time 8 with priority 0.
+8 | node8 | Injecting flit 9 into subnet 0 at time 8 with priority 0.
+8 | network_0/network_0_fchan_ingress1 | Completed channel traversal for flit 1.
+8 | network_0/network_0_fchan_ingress8 | Completed channel traversal for flit 8.
+8 | network_0/router_0_0_1 | Sending flit 0 to channel at output 0.
+9 | network_0/network_0_fchan_ingress1 | Beginning channel traversal for flit 2 with delay 1.
+9 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 9 with delay 1.
+9 | network_0/network_0_fchan_3 | Beginning channel traversal for flit 0 with delay 1.
+9 | network_0/router_0_0_1 | Buss router Received flit 1 from channel at input 1.
+9 | network_0/router_0_2_0 | Buss router Received flit 8 from channel at input 1.
+9 | node4 | Enqueuing packet 2 at time 9 src = 4 dest = 36.
+9 | node4 | Enqueuing flit 16 (packet 2) at time 9.
+9 | node4 | Enqueuing flit 17 (packet 2) at time 9.
+9 | node4 | Enqueuing flit 18 (packet 2) at time 9.
+9 | node4 | Enqueuing flit 19 (packet 2) at time 9.
+9 | node4 | Enqueuing flit 20 (packet 2) at time 9.
+9 | node4 | Enqueuing flit 21 (packet 2) at time 9.
+9 | node4 | Enqueuing flit 22 (packet 2) at time 9.
+9 | node4 | Enqueuing flit 23 (packet 2) at time 9.
+9 | node1 | Injecting flit 3 into subnet 0 at time 9 with priority 0.
+9 | traffic_manager | Finding output VC for flit 16:
+9 | traffic_manager |   Selected output VC 0.
+9 | network_0/router_0_1_0 | Adding VC range [0,7] at output port 3 for flit 16 (input port 1, destination 36).
+9 | node4 | Generating lookahead routing info for flit 16.
+9 | node4 | Injecting flit 16 into subnet 0 at time 9 with priority 0.
+9 | node8 | Injecting flit 10 into subnet 0 at time 9 with priority 0.
+9 | network_0/network_0_fchan_ingress1 | Completed channel traversal for flit 2.
+9 | network_0/network_0_fchan_ingress8 | Completed channel traversal for flit 9.
+9 | network_0/network_0_fchan_3 | Completed channel traversal for flit 0.
+9 | network_0/router_0_0_1 | Sending flit 0 to channel at output 0.
+9 | network_0/router_0_2_0 | Sending flit 8 to channel at output 0.
+10 | network_0/network_0_fchan_ingress1 | Beginning channel traversal for flit 3 with delay 1.
+10 | network_0/network_0_fchan_ingress4 | Beginning channel traversal for flit 16 with delay 1.
+10 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 10 with delay 1.
+10 | network_0/network_0_fchan_3 | Beginning channel traversal for flit 0 with delay 1.
+10 | network_0/network_0_fchan_17 | Beginning channel traversal for flit 8 with delay 1.
+10 | network_0/router_0_0_1 | Buss router Received flit 2 from channel at input 1.
+10 | network_0/router_0_2_0 | Buss router Received flit 9 from channel at input 1.
+10 | node1 | Injecting flit 4 into subnet 0 at time 10 with priority 0.
+10 | node4 | Injecting flit 17 into subnet 0 at time 10 with priority 0.
+10 | node8 | Injecting flit 11 into subnet 0 at time 10 with priority 0.
+10 | network_0/network_0_fchan_ingress1 | Completed channel traversal for flit 3.
+10 | network_0/network_0_fchan_ingress4 | Completed channel traversal for flit 16.
+10 | network_0/network_0_fchan_ingress8 | Completed channel traversal for flit 10.
+10 | network_0/network_0_fchan_3 | Completed channel traversal for flit 0.
+10 | network_0/network_0_fchan_17 | Completed channel traversal for flit 8.
+10 | network_0/router_0_0_1 | Sending flit 0 to channel at output 0.
+10 | network_0/router_0_2_0 | Sending flit 8 to channel at output 0.
+11 | network_0/network_0_fchan_ingress1 | Beginning channel traversal for flit 4 with delay 1.
+11 | network_0/network_0_fchan_ingress4 | Beginning channel traversal for flit 17 with delay 1.
+11 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 11 with delay 1.
+11 | network_0/network_0_fchan_3 | Beginning channel traversal for flit 0 with delay 1.
+11 | network_0/network_0_fchan_17 | Beginning channel traversal for flit 8 with delay 1.
+11 | network_0/router_0_0_1 | Buss router Received flit 3 from channel at input 1.
+11 | network_0/router_0_1_0 | Buss router Received flit 16 from channel at input 1.
+11 | network_0/router_0_1_3 | Buss router Received flit 8 from channel at input 0.
+11 | network_0/router_0_2_0 | Buss router Received flit 10 from channel at input 1.
+11 | node25 | Enqueuing packet 3 at time 11 src = 25 dest = 36.
+11 | node25 | Enqueuing flit 24 (packet 3) at time 11.
+11 | node25 | Enqueuing flit 25 (packet 3) at time 11.
+11 | node25 | Enqueuing flit 26 (packet 3) at time 11.
+11 | node25 | Enqueuing flit 27 (packet 3) at time 11.
+11 | node25 | Enqueuing flit 28 (packet 3) at time 11.
+11 | node25 | Enqueuing flit 29 (packet 3) at time 11.
+11 | node25 | Enqueuing flit 30 (packet 3) at time 11.
+11 | node25 | Enqueuing flit 31 (packet 3) at time 11.
+11 | node1 | Injecting flit 5 into subnet 0 at time 11 with priority 0.
+11 | node4 | Injecting flit 18 into subnet 0 at time 11 with priority 0.
+11 | node8 | Injecting flit 12 into subnet 0 at time 11 with priority 0.
+11 | traffic_manager | Finding output VC for flit 24:
+11 | traffic_manager |   Selected output VC 0.
+11 | network_0/router_1_2_1 | Adding VC range [0,7] at output port 1 for flit 24 (input port 1, destination 36).
+11 | node25 | Generating lookahead routing info for flit 24.
+11 | node25 | Injecting flit 24 into subnet 0 at time 11 with priority 0.
+11 | network_0/network_0_fchan_ingress1 | Completed channel traversal for flit 4.
+11 | network_0/network_0_fchan_ingress4 | Completed channel traversal for flit 17.
+11 | network_0/network_0_fchan_ingress8 | Completed channel traversal for flit 11.
+11 | network_0/network_0_fchan_3 | Completed channel traversal for flit 0.
+11 | network_0/network_0_fchan_17 | Completed channel traversal for flit 8.
+11 | network_0/router_0_0_1 | Sending flit 0 to channel at output 0.
+11 | network_0/router_0_1_0 | Sending flit 16 to channel at output 0.
+11 | network_0/router_0_1_3 | Sending flit 8 to channel at output 1.
+11 | network_0/router_0_2_0 | Sending flit 8 to channel at output 0.
+12 | network_0/network_0_fchan_ingress1 | Beginning channel traversal for flit 5 with delay 1.
+12 | network_0/network_0_fchan_ingress4 | Beginning channel traversal for flit 18 with delay 1.
+12 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 12 with delay 1.
+12 | network_0/network_0_fchan_ingress25 | Beginning channel traversal for flit 24 with delay 1.
+12 | network_0/network_0_fchan_egress7 | Beginning channel traversal for flit 8 with delay 1.
+12 | network_0/network_0_fchan_3 | Beginning channel traversal for flit 0 with delay 1.
+12 | network_0/network_0_fchan_9 | Beginning channel traversal for flit 16 with delay 1.
+12 | network_0/network_0_fchan_17 | Beginning channel traversal for flit 8 with delay 1.
+12 | network_0/router_0_0_1 | Buss router Received flit 4 from channel at input 1.
+12 | network_0/router_0_1_0 | Buss router Received flit 17 from channel at input 1.
+12 | network_0/router_0_1_3 | Buss router Received flit 8 from channel at input 0.
+12 | network_0/router_0_2_0 | Buss router Received flit 11 from channel at input 1.
+12 | node1 | Injecting flit 6 into subnet 0 at time 12 with priority 0.
+12 | node4 | Injecting flit 19 into subnet 0 at time 12 with priority 0.
+12 | node8 | Injecting flit 13 into subnet 0 at time 12 with priority 0.
+12 | node25 | Injecting flit 25 into subnet 0 at time 12 with priority 0.
+12 | network_0/network_0_fchan_ingress1 | Completed channel traversal for flit 5.
+12 | network_0/network_0_fchan_ingress4 | Completed channel traversal for flit 18.
+12 | network_0/network_0_fchan_ingress8 | Completed channel traversal for flit 12.
+12 | network_0/network_0_fchan_ingress25 | Completed channel traversal for flit 24.
+12 | network_0/network_0_fchan_egress7 | Completed channel traversal for flit 8.
+12 | network_0/network_0_fchan_3 | Completed channel traversal for flit 0.
+12 | network_0/network_0_fchan_9 | Completed channel traversal for flit 16.
+12 | network_0/network_0_fchan_17 | Completed channel traversal for flit 8.
+12 | network_0/router_0_0_1 | Sending flit 0 to channel at output 0.
+12 | network_0/router_0_1_0 | Sending flit 16 to channel at output 0.
+12 | network_0/router_0_1_3 | Sending flit 8 to channel at output 1.
+12 | network_0/router_0_2_0 | Sending flit 8 to channel at output 0.
+13 | node7 | Ejecting flit 8 (packet 1) from VC 0.
+13 | network_0/network_0_fchan_ingress1 | Beginning channel traversal for flit 6 with delay 1.
+13 | network_0/network_0_fchan_ingress4 | Beginning channel traversal for flit 19 with delay 1.
+13 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 13 with delay 1.
+13 | network_0/network_0_fchan_ingress25 | Beginning channel traversal for flit 25 with delay 1.
+13 | network_0/network_0_fchan_egress7 | Beginning channel traversal for flit 8 with delay 1.
+13 | network_0/network_0_fchan_3 | Beginning channel traversal for flit 0 with delay 1.
+13 | network_0/network_0_fchan_9 | Beginning channel traversal for flit 16 with delay 1.
+13 | network_0/network_0_fchan_17 | Beginning channel traversal for flit 8 with delay 1.
+13 | network_0/router_0_0_1 | Buss router Received flit 5 from channel at input 1.
+13 | network_0/router_0_0_3 | Buss router Received flit 16 from channel at input 0.
+13 | network_0/router_0_1_0 | Buss router Received flit 18 from channel at input 1.
+13 | network_0/router_0_1_3 | Buss router Received flit 8 from channel at input 0.
+13 | network_0/router_0_2_0 | Buss router Received flit 12 from channel at input 1.
+13 | network_0/router_1_2_1 | Buss router Received flit 24 from channel at input 1.
+13 | node1 | Injecting flit 7 into subnet 0 at time 13 with priority 0.
+13 | node4 | Injecting flit 20 into subnet 0 at time 13 with priority 0.
+13 | node8 | Injecting flit 14 into subnet 0 at time 13 with priority 0.
+13 | node25 | Injecting flit 26 into subnet 0 at time 13 with priority 0.
+13 | node7 | Injecting credit for VC 0 into subnet 0.
+13 | node7 | Retiring flit 8 (packet 1, src = 8, dest = 36, hops = 0, flat = 6).

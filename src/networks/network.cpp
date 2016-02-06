@@ -58,6 +58,7 @@ Network::Network( const Configuration &config, const string & name ) :
   _channels = -1;
   _classes  = config.GetInt("classes");
   _bus      = config.GetInt("node_per_bus");
+  _router_in_mesh = -1;
 }
 
 Network::~Network( )
@@ -79,6 +80,10 @@ Network::~Network( )
   for ( int c = 0; c < _channels; ++c ) {
     if ( _chan[c] ) delete _chan[c];
     if ( _chan_cred[c] ) delete _chan_cred[c];
+  }
+  for ( int c = 0; c < _router_in_mesh; ++c ) {
+    if ( _buschan[c] ) delete _buschan[c];
+    if ( _buschan_cred[c] ) delete _buschan_cred[c];
   }
 }
 
@@ -187,6 +192,18 @@ void Network::_Alloc( )
     name << Name() << "_cchan_" << c;
     _chan_cred[c] = new CreditChannel(this, name.str());
     _timed_modules.push_back(_chan_cred[c]);
+  }
+  _buschan.resize(_router_in_mesh);
+  _buschan_cred.resize(_router_in_mesh);
+  for ( int c = 0; c < _router_in_mesh; ++c ) {
+    ostringstream name;
+    name << Name() << "_fchan_bus_" << c;
+    _buschan[c] = new FlitChannel(this, name.str(), _classes);
+    _timed_modules.push_back(_buschan[c]);
+    name.str("");
+    name << Name() << "_cchan_bus_" << c;
+    _buschan_cred[c] = new CreditChannel(this, name.str());
+    _timed_modules.push_back(_buschan_cred[c]);
   }
 }
 

@@ -146,14 +146,21 @@ void BusRouter::_InternalStep( )
    // int x, y, z;
    // input_istring >> dump >> x >> dump >> y >> dump >> z;
      
-    
+    //2-direction ring bus, [0],[1] is the ring buses, [2] is the inject/eject ports 
+    //if(input == 0){
+    //  _output_buffer[2].push(f);
+    //  if(_number < (_node_per_bus - 1)){
+    //      _output_buffer[0].push(f);
+    //  }
+    //} else {
+    //  _output_buffer[1].push(f);
+    //}
+
+    //1 ring bus, [0] is the ring bus, [1] is the inject/eject ports
     if(input == 0){
-      _output_buffer[2].push(f);
-      if(_number < (_node_per_bus - 1)){
-          _output_buffer[0].push(f);
-      }
-    } else {
       _output_buffer[1].push(f);
+    } else {
+      _output_buffer[0].push(f);
     }
   } 
 
@@ -185,6 +192,7 @@ bool BusRouter::_ReceiveFlits( )
 
       if(f->watch) {
 	*gWatchOut << GetSimTime() << " | " << FullName() << " | "
+		   << "Buss router " 
 		   << "Received flit " << f->id
 		   << " from channel at input " << input
 		   << "." << endl;

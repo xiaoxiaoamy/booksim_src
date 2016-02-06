@@ -35,7 +35,7 @@ use_read_write = 0;
 
 
 topology = bus_mesh;
-k = 8;
+k = 4;
 n = 2;
 node_per_bus = 4;
 
