@@ -401,6 +401,7 @@ void fattree_anca( const Router *r, const Flit *f,
 // ===
 
 int dor_next_mesh( int cur, int dest, bool descending = false );
+int dor_next_mesh_bus( int cur, int dest, bool descending = false );
 
 void adaptive_xy_yx_mesh( const Router *r, const Flit *f, 
 		 int in_channel, OutputSet *outputs, bool inject )
@@ -569,6 +570,46 @@ int dor_next_mesh( int cur, int dest, bool descending )
   }
 }
 
+
+//=============================================================
+
+int dor_next_mesh_bus( int cur, int dest, bool descending )
+{
+  //if ( cur == (dest/gNodes_per_bus) ) {
+  if ( cur == dest ) {
+    return 2*gN;  // Eject
+  }
+
+  int dim_left;
+  int gNodes_mesh = gNodes/gNodes_per_bus;
+  int cur_mesh = cur/gNodes_per_bus;
+
+  cout<<"Routing Debug: gk="<<gK<<", gNodes="<<gNodes
+      <<", cur="<<cur<<", dest="<<dest
+      <<", gNodes_per_bus="<<gNodes_per_bus<<endl;
+  if(descending) {
+    for ( dim_left = ( gN - 1 ); dim_left > 0; --dim_left ) {
+      if ( ( cur_mesh * gK / gNodes_mesh ) != ( dest * gK / gNodes_mesh ) ) { break; }
+      cur_mesh = (cur_mesh * gK) % gNodes_mesh; dest = (dest * gK) % gNodes_mesh;
+    }
+    cur_mesh = (cur_mesh * gK) / gNodes_mesh;
+    dest = (dest * gK) / gNodes_mesh;
+  } else {
+    for ( dim_left = 0; dim_left < ( gN - 1 ); ++dim_left ) {
+      if ( ( cur_mesh % gK ) != ( (dest/gNodes_per_bus) % gK ) ) { break; }
+      cur_mesh /= gK; dest /= (gK*gNodes_per_bus);
+    }
+    cur_mesh %= gK;
+    dest %= (gK*gNodes_per_bus);
+  }
+
+  if ( cur_mesh < (dest/gNodes_per_bus) ) {
+    return 2*dim_left;     // Right
+  } else {
+    return 2*dim_left + 1; // Left
+  }
+}
+
 //=============================================================
 
 void dor_next_torus( int cur, int dest, int in_port,
@@ -677,6 +718,47 @@ void dim_order_mesh( const Router *r, const Flit *f, int in_channel, OutputSet *
 
   outputs->AddRange( out_port, vcBegin, vcEnd );
 }
+
+
+//=============================================================
+
+void dim_order_mesh_bus( const Router *r, const Flit *f, int in_channel, OutputSet *outputs, bool inject )
+{
+  int out_port = inject ? -1 : dor_next_mesh_bus( r->GetID( ), f->dest );
+
+  int vcBegin = 0, vcEnd = gNumVCs-1;
+  if ( f->type == Flit::READ_REQUEST ) {
+    vcBegin = gReadReqBeginVC;
+    vcEnd = gReadReqEndVC;
+  } else if ( f->type == Flit::WRITE_REQUEST ) {
+    vcBegin = gWriteReqBeginVC;
+    vcEnd = gWriteReqEndVC;
+  } else if ( f->type ==  Flit::READ_REPLY ) {
+    vcBegin = gReadReplyBeginVC;
+    vcEnd = gReadReplyEndVC;
+  } else if ( f->type ==  Flit::WRITE_REPLY ) {
+    vcBegin = gWriteReplyBeginVC;
+    vcEnd = gWriteReplyEndVC;
+  }
+  assert(((f->vc >= vcBegin) && (f->vc <= vcEnd)) || (inject && (f->vc < 0)));
+
+  if ( !inject && f->watch ) {
+    *gWatchOut << GetSimTime() << " | " << r->FullName() << " | "
+               << "Adding VC range ["
+               << vcBegin << ","
+               << vcEnd << "]"
+               << " at output port " << out_port
+               << " for flit " << f->id
+               << " (input port " << in_channel
+               << ", destination " << f->dest << ")"
+               << "." << endl;
+  }
+
+  outputs->Clear();
+
+  outputs->AddRange( out_port, vcBegin, vcEnd );
+}
+
 
 //=============================================================
 
@@ -1966,7 +2048,7 @@ void InitializeRoutingMap( const Configuration & config )
   gRoutingFunctionMap["nca_tree4"]           = &tree4_nca;
   gRoutingFunctionMap["anca_tree4"]          = &tree4_anca;
   gRoutingFunctionMap["dor_mesh"]            = &dim_order_mesh;
-  gRoutingFunctionMap["dor_bus_mesh"]        = &dim_order_mesh;
+  gRoutingFunctionMap["dor_bus_mesh"]        = &dim_order_mesh_bus;
   gRoutingFunctionMap["xy_yx_mesh"]          = &xy_yx_mesh;
   gRoutingFunctionMap["adaptive_xy_yx_mesh"]          = &adaptive_xy_yx_mesh;
   // End Balfour-Schultz
